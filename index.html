@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friend List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>My Friends</h1>
+
+    <form id="friend-form">
+      <input type="hidden" id="friend-id">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="phone" placeholder="Phone">
+      <input type="text" id="notes" placeholder="Notes">
+      <button type="submit" id="submit-btn">Add Ritish Friend</button>
+      <button type="button" id="cancel-btn" hidden>Cancel</button>
+    </form>
+
+    <p id="status"></p>
+
+    <table id="friends-table">
+      <thead>
+        <tr>
+          <th>All Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Notes</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="friends-body"></tbody>
+    </table>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
